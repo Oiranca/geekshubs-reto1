@@ -1,0 +1,7 @@
+#header{
+    background-image: url("../img/header.jpeg");
+    position: relative;
+    min-height: 400px;
+    max-height: 450px;
+
+}
