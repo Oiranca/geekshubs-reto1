@@ -1,7 +1,176 @@
-#header{
-    background-image: url("../img/header.jpeg");
-    position: relative;
-    min-height: 400px;
-    max-height: 450px;
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-index {
+    width: auto;
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+    border-bottom-color: #D9F6E1;
+    background: snow;
+
+}
+
+.row-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h5 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#article-index {
+    justify-content: center;
+}
+
+.article-col {
+    align-self: center;
+}
+
+.image-logo {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#footer {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 576px) {
+
+    .article-col {
+        font-size: calc(8px + 1vw);
+        text-align: center;
+
+    }
+
+
+    .icon-index {
+        width: 2rem;
+        margin-bottom: 5px;
+    }
+
+    #footer {
+        font-size: calc(3px + 1vw);
+    }
+
+
+}
+
+@media (min-width: 576px) {
+
+    .article-col {
+        font-size: calc(5px + 1vw);
+        text-align: center;
+
+    }
+
+    .icon-index {
+
+        width: 2rem;
+        margin-bottom: 5px;
+    }
+
+    #footer {
+        font-size: calc(3px + 1vw);
+
+
+    }
+
+}
+
+@media (min-width: 768px) {
+    .article-col {
+        font-size: calc(5px + 1vw);
+        text-align: center;
+
+    }
+
+    #menu-index {
+
+        font-size: calc(15px + 1vw);
+
+    }
+
+    .icon-index {
+
+        width: 4rem;
+        margin-bottom: 5px;
+    }
+
+    #footer {
+        font-size: calc(8px + 1vw);
+
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+    .article-col {
+        font-size: calc(5px + 1vw);
+        text-align: center;
+
+    }
+
+    #menu-index {
+
+        font-size: calc(20px + 1vw);
+
+    }
+
+    .icon-index {
+
+        width: 4rem;
+        margin-bottom: 5px;
+    }
+
+    #footer {
+        font-size: calc(3px + 1vw);
+position: absolute;
+        bottom: 0;
+    }
+
+
+}
+
+
+@media (min-width: 1200px) {
+    .article-col {
+        font-size: calc(5px + 1vw);
+        text-align: center;
+
+    }
+
+    #menu-index {
+
+        font-size: calc(20px + 1vw);
+
+    }
+
+    .icon-index {
+
+        width: 4rem;
+        margin-bottom: 5px;
+    }
+
+    #footer {
+        font-size: calc(3px + 1vw);
+        position: absolute;
+        bottom: 0;
+    }
+
 
 }
