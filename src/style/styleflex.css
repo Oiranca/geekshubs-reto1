@@ -1,0 +1,116 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+#container-profile {
+    background: snow;
+    background-size: cover;
+    min-height: 100%;
+    margin: inherit;
+    padding: 15px;
+
+}
+
+form{
+    border-bottom: #D9F6E1 2px solid;
+    border-top: #D9F6E1 2px solid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+label{
+    font-weight: bold;
+    margin: 10px;
+    font-family: "Century Schoolbook L", monospace;
+    border-bottom: #D9F6E1 1px solid;
+  }
+.form-control{
+    border: none;
+}
+.form-row{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#image-profile{
+    border: #D9F6E1 2px solid;
+    border-radius: 23px;
+}
+#image-row{
+    justify-content: center;
+    padding: 10px;
+}
+#icons-row{
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 50%;
+
+
+}
+.icons-menu{
+    background: none;
+
+}
+
+
+
+@media (min-width: 576px) {
+
+    #image-profile{
+        width: 8rem;
+    }
+    .icons-menu{
+        width: 4rem;
+        border: none;
+
+    }
+
+
+}
+@media (max-width: 576px) {
+
+    #image-profile{
+        width: 8rem;
+    }
+    .icons-menu{
+        width: 4rem;
+
+
+
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    #image-profile{
+        width: 12rem;
+
+    }
+    .icons-menu{
+        width: 6rem;
+
+
+    }
+}
+
+@media (min-width: 992px) {
+
+
+    #image-profile{
+        width: 16rem;
+
+    }
+    .icons-menu{
+        width: 6rem;
+
+
+    }
+}
