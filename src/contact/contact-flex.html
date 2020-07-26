@@ -17,7 +17,41 @@
 
     <div class="row" id="image-row">
 
-        <img src="../img/icon/contact.svg" alt="Imagen Perfil" id="image-profile">
+        <img src="../img/icon/contact.svg" alt="Imagen" id="image-profile">
+    </div>
+
+
+    <div class="row" id="icons-row">
+        <div class="col">
+            <div class="row row-cols-1">
+                <div class="col">
+                    <p class="text-menu">
+                        Menú Principal
+                    </p>
+                </div>
+                <div class="col">
+                    <a href="../index.html">
+                        <img src="../img/icon/main.svg" alt="Menu" class="icons-menu">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row row-cols-1">
+                <div class="col">
+                    <p id="text-menu-profile">
+                        Perfil
+                    </p>
+                </div>
+                <div class="col">
+                    <a href="../profile/profile-flex.html">
+                        <img src="../img/icon/perfil.svg" alt="Profile" class="icons-menu">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <form>
         <div class="form-row">
@@ -30,46 +64,41 @@
                 <input type="text" class="form-control" id="inputSurname" placeholder="Romero Arbelo" readonly>
             </div>
         </div>
-
         <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputAddress">Direccion</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Calle Mi casa 1 Gran Canaria"
-                       readonly>
-            </div>
-            <div class="form-group col-md-3">
-                <label for="inputPais">Pais</label>
-                <input type="text" class="form-control" id="inputPais" placeholder="España" readonly>
-            </div>
-            <div class="form-group col-md-3">
-                <label for="inputLocalidad">Localidad</label>
-                <input type="text" class="form-control" id="inputLocalidad" placeholder="Mi Localidad" readonly>
-            </div>
+            <div class="col-md-6">
+                <label for="select-contact">Método de Contacto</label>
+                <select class="form-control" id="select-contact">
+                    <option>Seleccione una opción</option>
+                    <option>miemail@gmail.com</option>
+                    <option>Movil (612 345 689)</option>
 
+                </select>
+            </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="micorreo@gmail.com" readonly>
+                <label for="text-email">Escribir Email</label>
+                <textarea class="form-control" id="text-email" rows="3"
+                          placeholder="Aquí iría el texto a enviar en el Email"></textarea>
+                <div class="row send-button">
+                    <button type="button" class="btn btn-light">Enviar Email</button>
+                </div>
+
             </div>
             <div class="form-group col-md-6">
-                <label for="inputPassword">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Mi Password" readonly>
+                <label for="text-sms">Escribir SMS</label>
+                <textarea class="form-control" id="text-sms" rows="3"
+                          placeholder="Aquí iría el texto a enviar en el SMS"></textarea>
+
+                <div class="row send-button">
+
+                    <button type="button" class="btn btn-light">Enviar SMS</button>
+                </div>
             </div>
 
         </div>
-        <div class="row" id="icons-row">
-
-            <a href="../index.html">
-                <img src="../img/icon/main.svg" alt="Menu" class="icons-menu">
-            </a>
 
 
-            <a type="button">
-                <img src="../img/icon/perfil.svg" alt="Profile" class="icons-menu">
-            </a>
-
-        </div>
     </form>
 
 

@@ -3,38 +3,14 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    background: snow;
+    background-size: cover;
 
 }
 #container-profile {
-    background: snow;
-    background-size: cover;
-    min-height: 100%;
     margin: inherit;
     padding: 15px;
 
-}
-
-form{
-    border-bottom: #D9F6E1 2px solid;
-    border-top: #D9F6E1 2px solid;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-}
-label{
-    font-weight: bold;
-    margin: 10px;
-    font-family: "Century Schoolbook L", monospace;
-    border-bottom: #D9F6E1 1px solid;
-  }
-.form-control{
-    border: none;
-}
-.form-row{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
 }
 
 #image-profile{
@@ -46,31 +22,84 @@ label{
     padding: 10px;
 }
 #icons-row{
-    justify-content: space-around;
+    border-bottom: #D9F6E1 2px solid;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 10px;
+    padding-block-end: inherit;
+    padding-inline-end: 25px;
+    padding-inline-start: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+#menu-label{
+    justify-content: space-between;
+    margin: auto;
     width: 50%;
 
+}
+.text-menu{
+    font-weight: bold;
+    font-family: "Century Schoolbook L", monospace;
+    border-bottom: #D9F6E1 2px solid;
+}
+#text-menu-profile{
+    font-weight: bold;
+    font-family: "Century Schoolbook L", monospace;
+    border-bottom: #D9F6E1 1px solid;
+    margin-right: 15px;
 
 }
 .icons-menu{
     background: none;
+    width: 2rem;
+}
+
+form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+label{
+    font-weight: bold;
+    margin: 10px;
+    font-family: "Century Schoolbook L", monospace;
+    border-bottom: #D9F6E1 2px solid;
+}
+.form-control{
+    border: none;
+}
+.form-row{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    justify-content: center;
+}
+.send-button{
+    padding-top: 15px;
+    justify-content: center;
+    font-weight: bold;
+    font-family: "Century Schoolbook L", monospace;
 
 }
 
+.send-button > button{
+    background: #D9F6E1 ;
+}
 
+#text-email, #text-sms, #select-contact{
+    border: #D9F6E1 1px solid;
+}
 
 @media (min-width: 576px) {
 
     #image-profile{
         width: 8rem;
     }
-    .icons-menu{
-        width: 4rem;
-        border: none;
 
-    }
 
 
 }
@@ -79,12 +108,7 @@ label{
     #image-profile{
         width: 8rem;
     }
-    .icons-menu{
-        width: 4rem;
 
-
-
-    }
 }
 
 
@@ -94,23 +118,14 @@ label{
         width: 12rem;
 
     }
-    .icons-menu{
-        width: 6rem;
 
-
-    }
 }
 
 @media (min-width: 992px) {
 
-
     #image-profile{
-        width: 16rem;
+        width: 14rem;
 
     }
-    .icons-menu{
-        width: 6rem;
 
-
-    }
 }
