@@ -1,0 +1,190 @@
+.container-grid {
+    display: grid;
+
+    grid-template-areas: "head head"
+                       "menu contact"
+                       "imgMenu imgContact"
+                        "name surname"
+                        "address country"
+                        "email password";
+
+    font-weight: bold;
+    font-family: "Century Schoolbook L", monospace;
+    justify-content: center;
+}
+
+.image-profile {
+    grid-area: head;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.text-menu {
+    grid-area: menu;
+    text-align: center;
+
+}
+
+.text-contact {
+    grid-area: contact;
+    text-align: center;
+
+}
+
+.icons-menu {
+    grid-area: imgMenu;
+    width: 2rem;
+
+}
+
+.icons-profile {
+    grid-area: imgContac;
+    width: 2rem;
+
+}
+
+.menu {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.name {
+    grid-area: name;
+}
+
+.surname {
+    grid-area: surname;
+}
+
+
+.address {
+    grid-area: address;
+}
+
+.country {
+    grid-area: country;
+}
+
+.email {
+    grid-area: email;
+}
+
+.password {
+    grid-area: password;
+}
+
+@media (max-width: 576px) {
+    .image-profile > img {
+        width: 4rem;
+    }
+
+    .container-grid {
+        display: grid;
+
+        grid-template-areas: "head head"
+                       "menu contact"
+                       "imgMenu imgContact"
+                        "name name"
+                        "surname surname"
+                        "address address"
+                        "country country"
+                        "email email"
+                        "password password";
+
+        font-weight: bold;
+        font-family: "Century Schoolbook L", monospace;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .image-profile > img {
+        width: 4rem;
+    }
+
+    .container-grid {
+        display: grid;
+
+        grid-template-areas: "head head"
+                       "menu contact"
+                       "imgMenu imgContact"
+                        "name name"
+                        "surname surname"
+                        "address address"
+                        "country country"
+                        "email email"
+                        "password password";
+
+        font-weight: bold;
+        font-family: "Century Schoolbook L", monospace;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .image-profile > img {
+        width: 8rem;
+    }
+    .container-grid {
+        display: grid;
+
+        grid-template-areas: "head head"
+                       "menu contact"
+                       "imgMenu imgContact"
+                        "name surname"
+                        "address country"
+                        "email password";
+
+        font-weight: bold;
+        font-family: "Century Schoolbook L", monospace;
+        justify-content: center;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+    .image-profile > img {
+        width: 10rem;
+    }
+    .container-grid {
+        display: grid;
+
+        grid-template-areas: "head head"
+                       "menu contact"
+                       "imgMenu imgContact"
+                        "name surname"
+                        "address country"
+                        "email password";
+
+        font-weight: bold;
+        font-family: "Century Schoolbook L", monospace;
+        justify-content: center;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .image-profile > img {
+        width: 12rem;
+    }
+    .container-grid {
+        display: grid;
+
+        grid-template-areas: "head head"
+                       "menu contact"
+                       "imgMenu imgContact"
+                        "name surname"
+                        "address country"
+                        "email password";
+
+        font-weight: bold;
+        font-family: "Century Schoolbook L", monospace;
+        justify-content: center;
+    }
+}
