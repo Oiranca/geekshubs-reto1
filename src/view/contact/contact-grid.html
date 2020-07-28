@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="../../style/stylegrid.css" rel="stylesheet" type="text/css">
+    <link href="../../style/stylegridContact.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -18,7 +18,7 @@
 
     <header id="logo">
 
-        <img src="../../img/profile/hombre.svg" alt="Profile" id="image-logo">
+        <img src="../../img/icon/contact.svg" alt="Profile" id="image-logo">
 
 
     </header>
@@ -33,7 +33,7 @@
 
     <section id="menu2">
         <p>
-            Contacto
+            Perfil
         </p>
     </section>
 
@@ -46,10 +46,10 @@
 
 
     </nav>
-    <nav id="icon-contact">
+    <nav id="icon-profile">
 
-        <a href="../contact/contact-flex.html">
-            <img src="../../img/icon/contact.svg" alt="Contacto">
+        <a href="../profile/profile-grid.html">
+            <img src="../../img/icon/perfil.svg" alt="Perfil">
         </a>
 
 
@@ -66,25 +66,39 @@
         <input type="text" class="form-control" id="inputSurname" placeholder="Romero Arbelo" readonly>
     </section>
 
-    <section id="address">
-        <label for="inputAddress">Direccion</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Calle Mi casa 1 Gran Canaria"
-               readonly>
-    </section>
-    <section id="country">
-        <label for="inputPais">Pais</label>
-        <input type="text" class="form-control" id="inputPais" placeholder="España" readonly>
+    <section id="type-contact">
+        <label for="select-contact">Método de Contacto</label>
+        <select class="form-control" id="select-contact">
+            <option>Seleccione una opción</option>
+            <option>miemail@gmail.com</option>
+            <option>Movil (612 345 689)</option>
+
+        </select>
     </section>
 
     <section id="email">
-        <label for="inputEmail">Email</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="micorreo@gmail.com" readonly>
+        <label for="text-email">Escribir Email</label>
+        <textarea class="form-control" id="text-email" rows="3"
+                  placeholder="Aquí iría el texto a enviar en el Email"></textarea>
+
+
     </section>
-    <section id="password">
-        <label for="inputPassword">Contraseña</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Mi Password" readonly>
+    <section id="sms">
+        <label for="text-sms">Escribir SMS</label>
+        <textarea class="form-control" id="text-sms" rows="3"
+                  placeholder="Aquí iría el texto a enviar en el SMS"></textarea>
+
+    </section>
+    <section id="button-email">
+
+            <button type="button" class="btn btn-light">Enviar Email</button>
+
     </section>
 
+
+    <section id="button-sms">
+        <button type="button" class="btn btn-light">Enviar SMS</button>
+    </section>
     <footer id="footer">
 
         <p> &#169 Samuel Romero Arbelo</p>
