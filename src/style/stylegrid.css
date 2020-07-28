@@ -1,0 +1,177 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+#container-page > #logo {
+    grid-area: head;
+    border: 2px solid #D9F6E1;
+    justify-self: center;
+}
+
+#image-logo {
+    width: 8rem;
+}
+
+#container-page > #menu > p {
+    grid-area: index;
+    background-color: #D9F6E1;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#container-page > #menu2 > p {
+    grid-area: contact;
+    background-color: #D9F6E1;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#container-page > #icon-index {
+    grid-area: iconIndex;
+    justify-self: center;
+}
+
+#container-page > #icon-contact {
+    grid-area: iconContact;
+    justify-self: center;
+}
+
+nav > a > img {
+    width: 4rem
+}
+
+
+#container-page > #name {
+    grid-area: name;
+}
+
+#container-page > #surname {
+    grid-area: surname;
+}
+
+#container-page > #address {
+    grid-area: address;
+}
+
+#container-page > #country {
+    grid-area: country;
+}
+
+#container-page > #email {
+    grid-area: email;
+}
+
+#container-page > #password {
+    grid-area: password;
+}
+
+#container-page > #footer {
+    grid-area: footer;
+    justify-self: center;
+}
+
+
+@media (min-width: 360px) {
+    #container-page {
+        display: grid;
+        padding: 10px;
+        width: auto;
+        height: 100%;
+        grid-template-areas: "head head" "index index"
+        "iconIndex iconIndex" "contact contact"
+        "iconContact iconContact"
+        "name name"
+        "surname surname"
+        "address address"
+        "country country"
+        "email email"
+        "password password"
+        "footer footer";
+        grid-template-rows: 8rem 20px 4rem 20px 4rem repeat(6, 100px) 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        font-weight: bold;
+        font-family: "Century Schoolbook L", monospace;
+    }
+
+
+    #container-page > #menu {
+        grid-area: index;
+        background-color: #D9F6E1;
+
+    }
+
+
+    #container-page > #menu2 {
+        grid-area: contact;
+    }
+
+    #container-page > #icon-index {
+        grid-area: iconIndex;
+
+
+    }
+
+    #container-page > #icon-contact {
+        grid-area: iconContact;
+
+    }
+
+    #container-page > #name {
+        grid-area: name;
+    }
+
+    #container-page > #surname {
+        grid-area: surname;
+    }
+
+    #container-page > #address {
+        grid-area: address;
+    }
+
+    #container-page > #country {
+        grid-area: country;
+    }
+
+    #container-page > #email {
+        grid-area: email;
+    }
+
+    #container-page > #password {
+        grid-area: password;
+    }
+
+}
+
+
+@media (min-width: 575px) {
+
+    #container-page {
+        display: grid;
+        padding: 30px;
+        width: auto;
+        height: 100%;
+        grid-template-areas: "head head" "index contact" "iconIndex iconContact" "name surname" "address country" "email password" "footer footer";
+        grid-template-rows: 8rem 20px 4rem repeat(3, 100px) 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        font-weight: bold;
+        font-family: "Century Schoolbook L", monospace;
+
+    }
+
+    #footer {
+        font-size: calc(1px + 1vw);
+
+    }
+
+}
+
+
+
+
+
