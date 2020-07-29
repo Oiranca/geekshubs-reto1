@@ -14,85 +14,96 @@
 </head>
 <body>
 <div class="container-fluid" id="container-profile">
+    <header>
 
-    <div class="row" id="image-row">
+        <div class="row" id="image-row">
 
-        <img src="../../img/profile/hombre.svg" alt="Imagen Perfil" id="image-profile">
-    </div>
-    <div class="row" id="icons-row">
-        <div class="col">
-            <div class="row row-cols-1">
-                <div class="col">
-                    <p class="text-menu">
-                        Menú Principal
-                    </p>
-                </div>
-                <div class="col">
-                    <a href="../../index.html">
-                        <img src="../../img/icon/main.svg" alt="Menu" class="icons-menu">
-                    </a>
-                </div>
-            </div>
+            <img src="../../img/profile/hombre.svg" alt="Imagen Perfil" id="image-profile">
         </div>
-        <div class="col">
-            <div class="row row-cols-1">
-                <div class="col">
-                    <p id="text-menu-profile">
-                        Contacto
-                    </p>
-                </div>
-                <div class="col">
-                    <a href="../contact/contact-flex.html">
-                        <img src="../../img/icon/contact.svg" alt="Profile" class="icons-menu">
-                    </a>
+
+    </header>
+    <nav>
+
+        <div class="row" id="icons-row">
+            <div class="col">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <p class="text-menu">
+                            Menú Principal
+                        </p>
+                    </div>
+                    <div class="col">
+                        <a href="../../index.html">
+                            <img src="../../img/icon/main.svg" alt="Menu" class="icons-menu">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-    </div>
-    <form>
-        <div class="form-row">
-            <div class="col-md-6">
-                <label for="inputName">Nombre</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Samuel" readonly>
-            </div>
-            <div class="col-md-6">
-                <label for="inputSurname">Apellidos</label>
-                <input type="text" class="form-control" id="inputSurname" placeholder="Romero Arbelo" readonly>
-            </div>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputAddress">Direccion</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Calle Mi casa 1 Gran Canaria"
-                       readonly>
-            </div>
-            <div class="form-group col-md-3">
-                <label for="inputPais">Pais</label>
-                <input type="text" class="form-control" id="inputPais" placeholder="España" readonly>
-            </div>
-            <div class="form-group col-md-3">
-                <label for="inputLocalidad">Localidad</label>
-                <input type="text" class="form-control" id="inputLocalidad" placeholder="Mi Localidad" readonly>
+            <div class="col">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <p id="text-menu-profile">
+                            Contacto
+                        </p>
+                    </div>
+                    <div class="col">
+                        <a href="../contact/contact-flex.html">
+                            <img src="../../img/icon/contact.svg" alt="Profile" class="icons-menu">
+                        </a>
+                    </div>
+                </div>
             </div>
 
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="micorreo@gmail.com" readonly>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="inputPassword">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Mi Password" readonly>
-            </div>
 
         </div>
 
-    </form>
+    </nav>
+    <main>
 
+        <form>
+            <div class="form-row">
+                <div class="col-md-6">
+                    <label for="inputName">Nombre</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Samuel" disabled>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputSurname">Apellidos</label>
+                    <input type="text" class="form-control" id="inputSurname" placeholder="Romero Arbelo" disabled>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Direccion</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Calle Mi casa 1 Gran Canaria"
+                           disabled>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputPais">Pais</label>
+                    <input type="text" class="form-control" id="inputPais" placeholder="España" disabled>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputLocalidad">Localidad</label>
+                    <input type="text" class="form-control" id="inputLocalidad" placeholder="Mi Localidad" disabled>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="micorreo@gmail.com" disabled>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Mi Password" disabled>
+                </div>
+
+            </div>
+
+        </form>
+
+
+    </main>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

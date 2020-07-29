@@ -1,13 +1,10 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-
+/*En este ejemplo he puesto otro display grid
+pero lo he hecho con labels para dividir
+las columnas y las filas*/
 #container-page > #logo {
     grid-area: head;
-    border: 2px solid #D9F6E1;
     justify-self: center;
+
 }
 
 #image-logo {
@@ -35,8 +32,8 @@ html, body {
     justify-self: center;
 }
 
-#container-page > #icon-contact {
-    grid-area: iconContact;
+#container-page > #icon-profile {
+    grid-area: iconProfile;
     justify-self: center;
 }
 
@@ -53,20 +50,31 @@ nav > a > img {
     grid-area: surname;
 }
 
-#container-page > #address {
-    grid-area: address;
+#container-page > #type-contact {
+    grid-area: type-contact;
+    width: 50%;
+    justify-self: center;
 }
 
-#container-page > #country {
-    grid-area: country;
-}
 
 #container-page > #email {
     grid-area: email;
 }
 
-#container-page > #password {
-    grid-area: password;
+#container-page > #sms {
+    grid-area: sms;
+}
+
+
+#container-page > #button-email {
+    grid-area: btnEmail;
+    justify-self: center;
+}
+
+
+#container-page > #button-sms {
+    grid-area: btnSms;
+    justify-self: center;
 }
 
 #container-page > #footer {
@@ -74,24 +82,28 @@ nav > a > img {
     justify-self: center;
 }
 
-
+/*Aquí he puesto unos breakpoint para que se ajusten al ciertos
+tamaños de pantalla y he cambiado la colocalción de las filas
+y las columnas*/
 @media (min-width: 360px) {
     #container-page {
         display: grid;
         padding: 10px;
-        width: auto;
-        height: 100%;
+        width: 100%;
+        margin: auto;
         grid-template-areas: "head head" "index index"
-        "iconIndex iconIndex" "contact contact"
-        "iconContact iconContact"
+        "iconIndex iconIndex"
+        "contact contact"
+        "iconProfile iconProfile"
         "name name"
         "surname surname"
-        "address address"
-        "country country"
+        "type-contact type-contact"
         "email email"
-        "password password"
+        "btnEmail btnEmail"
+        "sms sms"
+        "btnSms btnSms"
         "footer footer";
-        grid-template-rows: 8rem 20px 4rem 20px 4rem repeat(6, 100px) 1fr;
+        grid-template-rows: 8rem 20px 4rem 20px 4rem repeat(7, 100px) 1fr;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         font-weight: bold;
@@ -141,10 +153,20 @@ nav > a > img {
         grid-area: email;
     }
 
-    #container-page > #password {
-        grid-area: password;
+    #container-page > #sms {
+        grid-area: sms;
     }
 
+    #container-page > #button-email {
+        grid-area: btnEmail;
+        ;
+    }
+
+
+    #container-page > #button-sms {
+        grid-area: btnSms;
+
+    }
 }
 
 
@@ -153,10 +175,17 @@ nav > a > img {
     #container-page {
         display: grid;
         padding: 30px;
-        width: auto;
-        height: 100%;
-        grid-template-areas: "head head" "index contact" "iconIndex iconContact" "name surname" "address country" "email password" "footer footer";
-        grid-template-rows: 8rem 20px 4rem repeat(3, 100px) 1fr;
+        width: 100%;
+        margin: auto;
+        grid-template-areas: "head head"
+        "index contact"
+        "iconIndex iconProfile"
+        "name surname"
+        "type-contact type-contact"
+        "email sms"
+        "btnEmail btnSms"
+        "footer footer";
+        grid-template-rows: 8rem 20px 4rem repeat(4, 100px) 1fr;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         font-weight: bold;
