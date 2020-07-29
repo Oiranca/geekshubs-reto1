@@ -1,9 +1,6 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-
+/*En este ejemplo he puesto otro display grid
+pero lo he hecho con labels para dividir
+las columnas y las filas*/
 #container-page > #logo {
     grid-area: head;
     justify-self: center;
@@ -85,13 +82,15 @@ nav > a > img {
     justify-self: center;
 }
 
-
+/*Aquí he puesto unos breakpoint para que se ajusten al ciertos
+tamaños de pantalla y he cambiado la colocalción de las filas
+y las columnas*/
 @media (min-width: 360px) {
     #container-page {
         display: grid;
         padding: 10px;
-        width: auto;
-        height: 100%;
+        width: 100%;
+        margin: auto;
         grid-template-areas: "head head" "index index"
         "iconIndex iconIndex"
         "contact contact"
@@ -176,8 +175,8 @@ nav > a > img {
     #container-page {
         display: grid;
         padding: 30px;
-        width: auto;
-        height: 100%;
+        width: 100%;
+        margin: auto;
         grid-template-areas: "head head"
         "index contact"
         "iconIndex iconProfile"
