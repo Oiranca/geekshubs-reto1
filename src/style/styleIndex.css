@@ -39,13 +39,6 @@ h5 {
     margin-bottom: 10px;
 }
 
-#footer {
-    text-align: center;
-    font-weight: bold;
-    width: 100%;
-    height: auto;
-}
-
 
 @media (max-width: 576px) {
 
@@ -59,10 +52,6 @@ h5 {
     .icon-index {
         width: 2rem;
         margin-bottom: 5px;
-    }
-
-    #footer {
-        font-size: calc(3px + 1vw);
     }
 
 
@@ -81,11 +70,6 @@ h5 {
         margin-bottom: 5px;
     }
 
-    #footer {
-        font-size: calc(3px + 1vw);
-
-
-    }
 
 }
 
@@ -106,10 +90,6 @@ h5 {
         margin-bottom: 5px;
     }
 
-    #footer {
-        font-size: calc(8px + 1vw);
-
-    }
 
 
 }
@@ -134,11 +114,6 @@ h5 {
         margin-bottom: 5px;
     }
 
-    #footer {
-        font-size: calc(3px + 1vw);
-        position: absolute;
-        bottom: 0;
-    }
 
 
 }
@@ -163,11 +138,6 @@ h5 {
         margin-bottom: 5px;
     }
 
-    #footer {
-        font-size: calc(3px + 1vw);
-        position: absolute;
-        bottom: 0;
-    }
 
 
 }
